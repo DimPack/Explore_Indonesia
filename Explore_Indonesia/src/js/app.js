@@ -9,8 +9,8 @@ const paths = document.querySelectorAll('.logo-path');
 anime({
     targets: paths,
     strokeDashoffset: [anime.setDashoffset, 0],
-    duration: 3000,
+    duration: 5000,
     endDelay: 1000,
-    easing: 'linear',
+    easing: 'easeInOutExpo',
     loop: true,
 });
