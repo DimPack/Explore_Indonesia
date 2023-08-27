@@ -3,13 +3,18 @@ header
     justify-content: space-between
     align-items: center
     padding: 30px
-    background: url('../img/bg-header.png')
+    background: url('../img/bg-header.png') no-repeat
 
 .menu
     display: flex
-    gap: 65px
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 600px
+    width: 100%
     text-transform: uppercase
-    max-width: 100%
+
+    & .menu_item:not(:last-child)
+        padding-right: 15px
 
 .form_search
     position: relative
